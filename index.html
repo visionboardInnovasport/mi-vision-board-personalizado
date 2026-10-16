@@ -53,9 +53,9 @@ h1 .accent{color:#fff}
 .catTitle{text-align:center}.catTitle .icon{font-size:32px}.catTitle h2{font-size:33px;margin:6px 0}.catTitle p{color:#a8b2b8;margin:0 auto 19px;max-width:650px;font-size:14px}
 .choiceGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .choice{border:3px solid transparent;border-radius:15px;overflow:hidden;background:#18242b;padding:0;position:relative;cursor:pointer}
-.choice img{display:block;width:100%;aspect-ratio:1.05;object-fit:cover}.choice.image-failed{min-height:180px}.tile.image-failed{min-height:150px}.choice .caption{padding:8px 9px;color:#fff;text-align:left;font-weight:800;font-size:11px}
-.choice:disabled{cursor:not-allowed;opacity:.48;filter:saturate(.55)}
-.uploadHelp{text-align:center;color:#aebdc5;font-size:13px;margin:16px 0 8px}.uploadImageBtn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;max-width:360px;margin:0 auto 18px;padding:13px 18px;border:1px dashed #66c8ed;border-radius:12px;background:#10232d;color:#d9f4ff;font:800 14px Nunito, sans-serif;cursor:pointer}.uploadImageBtn span{font-size:23px;line-height:1;color:#7fd4ff}.uploadImageBtn:disabled{opacity:.45;cursor:not-allowed}.choice.custom-choice img{object-fit:cover}.choice.custom-choice .caption{overflow-wrap:anywhere}.choice.selected{border-color:var(--cyan)}.choice.selected:after{content:"✓";position:absolute;right:7px;top:7px;width:28px;height:28px;border-radius:50%;background:var(--cyan);color:#fff;display:grid;place-items:center;font-weight:900}.selectionHint{margin:0 0 12px;text-align:center;color:#d5e0e5;font-size:13px}.selectionHint strong{color:#7fd4ff}.phraseBox textarea:invalid{border-color:#e03e52}.tile .tileImages{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr));gap:6px}.tile .tileImages img{aspect-ratio:1.12;object-fit:cover;width:100%;border-radius:8px}.tile .tileImages{padding:10px 10px 0}.tile .tilePhrase{padding:10px}.tile .tilePhrase p{overflow-wrap:anywhere}
+.choice img{display:block;width:100%;aspect-ratio:1.05;object-fit:cover}.pet-collage{display:grid;grid-template-columns:1fr 1fr;gap:3px;aspect-ratio:1.05;overflow:hidden}.pet-collage img{width:100%;height:100%;min-height:0;aspect-ratio:auto;object-fit:cover}.tile .pet-collage{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:10px 10px 0}.tile .pet-collage img{width:100%;aspect-ratio:1.12;object-fit:cover;border-radius:8px}.choice.image-failed{min-height:180px}.tile.image-failed{min-height:150px}.choice .caption{padding:8px 9px;color:#fff;text-align:left;font-weight:800;font-size:11px}
+.choice:disabled{cursor:not-allowed;opacity:.48;filter:saturate(.55)}.choice.selected{border-color:var(--cyan)}.choice.selected:after{content:"✓";position:absolute;right:7px;top:7px;width:28px;height:28px;border-radius:50%;background:var(--cyan);color:#fff;display:grid;place-items:center;font-weight:900}.selectionHint{margin:0 0 12px;text-align:center;color:#d5e0e5;font-size:13px}.selectionHint strong{color:#7fd4ff}
+.uploadHelp{text-align:center;color:#aebdc5;font-size:13px;margin:16px 0 8px}.uploadImageBtn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;max-width:360px;margin:0 auto 18px;padding:13px 18px;border:1px dashed #66c8ed;border-radius:12px;background:#10232d;color:#d9f4ff;font:800 14px Nunito,sans-serif;cursor:pointer}.uploadImageBtn span{font-size:23px;line-height:1;color:#7fd4ff}.uploadImageBtn:hover{background:#173d4d}.uploadImageBtn:disabled{opacity:.45;cursor:not-allowed}.choice.custom-choice img{object-fit:cover}.choice.custom-choice .caption{overflow-wrap:anywhere}.phraseBox textarea:invalid{border-color:#e03e52}.tile .tileImages{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,120px),1fr));gap:6px}.tile .tileImages img{aspect-ratio:1.12;object-fit:cover;width:100%;border-radius:8px}.tile .tileImages{padding:10px 10px 0}.tile .tilePhrase{padding:10px}.tile .tilePhrase p{overflow-wrap:anywhere}
 .phraseBox{margin-top:17px;background:#101b22;border-radius:16px;padding:16px}.phraseBox label{font-size:12px;color:#b2bcc2;font-weight:800;display:block;margin-bottom:7px}
 textarea{width:100%;min-height:78px;border-radius:12px;border:1px solid #38454d;background:#071018;color:#fff;padding:12px;font:600 14px Nunito;resize:vertical;outline:none}
 .actions{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px}
@@ -64,7 +64,7 @@ textarea{width:100%;min-height:78px;border-radius:12px;border:1px solid #38454d;
 .board{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:10px;background:#0d1b24;padding:12px;border-radius:22px;align-items:start}
 .tile{background:#fff;color:#1f282d;border-radius:13px;overflow:hidden}.tile img{width:100%;aspect-ratio:1.12;object-fit:cover;display:block}.tile div{padding:10px}.tile h3{margin:0 0 5px;font-size:14px}.tile p{margin:0;color:#667077;font-size:12px;line-height:1.3}
 .resultActions{display:flex;justify-content:center;gap:10px;margin-top:15px;flex-wrap:wrap}
-.whiteBtn{border:0;border-radius:999px;background:#fff;color:#16242d;padding:14px 22px;font:900 13px Nunito;cursor:pointer}.outlineBtn{border:1px solid #6e7b82;border-radius:999px;background:transparent;color:#fff;padding:13px 22px;font:900 13px Nunito;cursor:pointer}
+.whiteBtn:disabled,.outlineBtn:disabled{opacity:.55;cursor:wait}.whiteBtn{border:0;border-radius:999px;background:#fff;color:#16242d;padding:14px 22px;font:900 13px Nunito;cursor:pointer}.outlineBtn{border:1px solid #6e7b82;border-radius:999px;background:transparent;color:#fff;padding:13px 22px;font:900 13px Nunito;cursor:pointer}
 @media(max-width:900px){.categoryGrid{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.script{text-align:left;margin:10px 0 0}.choiceGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.screen{padding:12px}.nav{gap:8px}.live{display:none}h1{font-size:48px}.hero{padding:22px;min-height:0}.categoryGrid{grid-template-columns:repeat(2,1fr)}.board{grid-template-columns:1fr;gap:12px;padding:8px}.tile .tileImages{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.tile .tileImages img{aspect-ratio:1/1;min-width:0}.tile .tilePhrase{padding:12px}.tile h3{font-size:16px}.tile p{font-size:14px;line-height:1.45}.wHead span{display:none}.choiceGrid{gap:7px}.choice .caption{font-size:10px}.choice img{aspect-ratio:1/1}.resultHero h2{font-size:30px}.board{border-radius:16px}}
 @media(min-width:561px) and (max-width:900px){.board{grid-template-columns:repeat(2,minmax(0,1fr))}.tile .tileImages{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -117,13 +117,16 @@ textarea{width:100%;min-height:78px;border-radius:12px;border:1px solid #38454d;
   <div class="nav"><div class="neutralName">MI VISION BOARD</div></div>
   <div class="resultHero"><div class="eyebrow">¡LISTO!</div><h2>MI VISION BOARD</h2><p>Aquí está lo que elegiste para ti.</p></div>
   <div class="board" id="board"></div>
-  <div class="resultActions"><button class="whiteBtn" onclick="window.print()">↓ GUARDAR MI VISION BOARD</button><button class="outlineBtn" onclick="startOver()">HACER OTRO VISION BOARD</button></div>
+  <div class="resultActions"><button class="whiteBtn" onclick="downloadBoard('png')">↓ GUARDAR MI VISION BOARD</button><button class="outlineBtn" onclick="startOver()">HACER OTRO VISION BOARD</button></div>
+  <p id="downloadStatus" role="status" aria-live="polite" style="text-align:center;color:#aab4ba;font-size:12px;margin:10px 0 0"></p>
 </div>
 </section>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
 <script>
-const CATS = [{"name":"Bienestar","icon":"❤️","color":"#E95C73","desc":"Cuida de ti, por dentro y por fuera.","question":"¿Qué aspecto de tu bienestar te gustaría fortalecer?","images":[["Moverme a mi ritmo","https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85"],["Sentirme más fuerte","https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85"],["Mantenerme activo","https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=85"],["Comer y sentirme bien","https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85"],["Recargar energía","https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=85"],["Más aire libre","https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85"],["Mi gente","https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"],["Encontrar mi balance","https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=900&q=85"]]},{"name":"Crecimiento personal","icon":"🌱","color":"#55B84D","desc":"Dedica tiempo a crecer y descubrir tus capacidades.","question":"¿Qué aspecto de tu desarrollo personal te gustaría impulsar?","images":[["Mejorar mis hábitos","https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=85"],["Confiar más en mí","https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85"],["Ser constante","https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=900&q=85"],["Probar nuevos retos","https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=85"],["Atreverme a más","https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"],["Explorar mis ideas","https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=900&q=85"],["Mis próximos planes","https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=85"],["Celebrar mis avances","https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=85"]]},{"name":"Trabajo","icon":"💼","color":"#159CD8","desc":"Impulsa tu desarrollo y experiencia profesional.","question":"¿Qué te gustaría impulsar en tu desarrollo y experiencia profesional?","images":[["Hacer equipo","https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"],["Marcar la diferencia","https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85"],["Seguir creciendo","https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"],["Guiar a otros","https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"],["Organizarme mejor","https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"],["Aprender más","https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=900&q=85"],["Aportar nuevas ideas","https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85"],["Nuevas oportunidades","https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85"]]},{"name":"Aprendizaje","icon":"🧠","color":"#F2A11A","desc":"Sigue explorando y aprendiendo cosas nuevas.","question":"¿Qué nuevas habilidades, conocimientos o experiencias te gustaría explorar?","images":[["Aprender cosas nuevas","https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85"],["Descubrir algo nuevo","https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=85"],["Habilidades útiles","https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85"],["Explorar mi creatividad","https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=85"],["Aprender a mi ritmo","https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=900&q=85"],["Idiomas y culturas","https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=900&q=85"],["Pensar diferente","https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85"],["Seguir aprendiendo","https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&fit=crop&w=900&q=85"]]},{"name":"Experiencias","icon":"✈️","color":"#8156D9","desc":"Haz espacio para experiencias que quieras vivir.","question":"¿Qué nuevas experiencias te gustaría vivir, explorar o disfrutar?","images":[["Conocer nuevos lugares","https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85"],["Tomarme un respiro","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"],["Disfrutar más eventos","https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85"],["Descubrir lugares increíbles","https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85"],["Probar nuevos sabores","https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"],["Salir de ruta","https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=85"],["Nuevas aventuras","https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=85"],["Crear buenos recuerdos","https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"]]},{"name":"Propósito","icon":"✨","color":"#F2C33A","desc":"Piensa en lo que le da sentido a tu vida.","question":"¿Qué te gustaría construir, fortalecer o aportar a lo largo de tu vida?","images":[["Mi gente","https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85"],["Ayudar a otros","https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=85"],["Cuidar a los animales","https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85"],["Ser parte de algo","https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=900&q=85"],["Hacer realidad mis sueños","https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=85"],["Lo que me apasiona","https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"],["Dejar algo positivo","https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85"],["Compartir más momentos","https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85"]]}];
-// Fotografías reales cargadas desde sus URLs externas (Unsplash).
+const CATS = [{"name":"Bienestar","icon":"❤️","color":"#E95C73","desc":"Cuida de ti, por dentro y por fuera.","question":"¿Qué aspecto de tu bienestar te gustaría fortalecer?","images":[["Moverme a mi ritmo","https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=85"],["Sentirme más fuerte","https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85"],["Mantenerme activo","https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=900&q=85"],["Comer y sentirme bien","https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85"],["Recargar energía","https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=85"],["Más aire libre","https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=85"],["Mi gente","https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=85"],["Encontrar mi balance","https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=900&q=85"]]},{"name":"Crecimiento personal","icon":"🌱","color":"#55B84D","desc":"Dedica tiempo a crecer y descubrir tus capacidades.","question":"¿Qué aspecto de tu desarrollo personal te gustaría impulsar?","images":[["Mejorar mis hábitos","https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=85"],["Confiar más en mí","https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85"],["Ser constante","https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=900&q=85"],["Probar nuevos retos","https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=85"],["Atreverme a más","https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=85"],["Explorar mis ideas","https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=900&q=85"],["Mis próximos planes","https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=85"],["Celebrar mis avances","https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=900&q=85"]]},{"name":"Trabajo","icon":"👟","color":"#159CD8","desc":"Crece, aprende y haz equipo en la tienda.","question":"¿Qué te gustaría lograr en tu trabajo?","images":[["Hacer equipo en tienda","https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=85"],["Asesorar a clientes","https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85"],["Conocer mejor los productos","https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=85"],["Apoyar y guiar al equipo","https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=900&q=85"],["Mantener la tienda en orden","https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=900&q=85"],["Aprender sobre calzado y deporte","https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85"],["Crear exhibiciones atractivas","https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=85"],["Desarrollar mi potencial","https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"]]},{"name":"Aprendizaje","icon":"🧠","color":"#F2A11A","desc":"Sigue explorando y aprendiendo cosas nuevas.","question":"¿Qué nuevas habilidades, conocimientos o experiencias te gustaría explorar?","images":[["Aprender cosas nuevas","https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85"],["Descubrir algo nuevo","https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=85"],["Habilidades útiles","https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85"],["Explorar mi creatividad","https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=85"],["Aprender a mi ritmo","https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=900&q=85"],["Idiomas y culturas","https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=900&q=85"],["Pensar diferente","https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"],["Seguir aprendiendo","https://images.unsplash.com/photo-1501554728187-ce583db33af7?auto=format&fit=crop&w=900&q=85"]]},{"name":"Experiencias","icon":"✈️","color":"#8156D9","desc":"Haz espacio para experiencias que quieras vivir.","question":"¿Qué nuevas experiencias te gustaría vivir, explorar o disfrutar?","images":[["Conocer nuevos lugares","https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=85"],["Tomarme un respiro","https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"],["Disfrutar más eventos","https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85"],["Descubrir lugares increíbles","https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85"],["Probar nuevos sabores","https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"],["Salir de ruta","https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=900&q=85"],["Nuevas aventuras","https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=85"],["Crear buenos recuerdos","https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85"]]},{"name":"Propósito","icon":"✨","color":"#F2C33A","desc":"Piensa en lo que le da sentido a tu vida.","question":"¿Qué te gustaría construir, fortalecer o aportar a lo largo de tu vida?","images":[["Mi gente","https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=900&q=85"],["Ayudar a otros","https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=900&q=85"],["Cuidar a los animales","https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=900&q=85"],["Ser parte de algo","https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=85"],["Hacer realidad mis sueños","https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=85"],["Lo que me apasiona","https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"],["Dejar algo positivo","https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85"],["Compartir más momentos","https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85"]]}];
+// Fotografías de Unsplash: selección revisada para mejorar la correspondencia con cada frase, variar escenas y mantener diversidad visual. Las 48 opciones usan URLs distintas; las fotos de personas se distribuyen entre categorías y se combinan con imágenes de actividades, objetos y destinos.
+const BASE_IMAGE_COUNTS = CATS.map(c=>c.images.length);
 
 let current = 0;
 let answers = CATS.map(()=>({images:[],customImages:[],phrase:""}));
@@ -154,6 +157,7 @@ function begin(startIndex=0){
 }
 function renderStep(){
   const c=CATS[current], a=answers[current];
+  const selectedTotal=a.images.length+a.customImages.length;
   document.getElementById('stepLabel').textContent=(current+1)+' / 6';
   document.getElementById('stepName').textContent=c.name;
   document.getElementById('wFill').style.width=((current+1)/6*100)+'%';
@@ -167,44 +171,55 @@ function renderStep(){
     b.type='button';
     const isSelected=a.images.includes(i);
     b.className='choice'+(isSelected?' selected':'');
-    b.disabled=!isSelected && (a.images.length+a.customImages.length)>=3;
+    b.disabled=!isSelected && selectedTotal>=3;
     b.setAttribute('aria-pressed',String(isSelected));
     b.setAttribute('aria-label',item[0]+(isSelected?' (seleccionada)':''));
-    b.innerHTML='<img src="'+item[1]+'" alt="'+c.name+' · '+item[0]+'"><div class="caption">'+item[0]+'</div>';
+    if(item[0]==='Cuidar a los animales'){
+      b.innerHTML='<div class="pet-collage" aria-label="Perro, gato, conejo y ave"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=450&q=85" alt="Perro"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=450&q=85" alt="Gato"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=450&q=85" alt="Conejo"><img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=450&q=85" alt="Ave"></div><div class="caption">Cuidar a los animales</div>';
+    }else{
+      b.innerHTML='<img src="'+item[1]+'" alt="'+c.name+' · '+item[0]+'"><div class="caption">'+item[0]+'</div>';
+    }
     b.onclick=()=>{
       const selectedIndex=a.images.indexOf(i);
       if(selectedIndex>=0){a.images.splice(selectedIndex,1)}
-      else {
-        // Validación definitiva: nunca permitir una cuarta imagen en esta categoría.
-        if(a.images.length+a.customImages.length>=3){return;}
-        a.images.push(i);
-      }
+      else {if(a.images.length+a.customImages.length>=3)return;a.images.push(i)}
       renderStep();
     };
     grid.appendChild(b);
   });
-  // Las imágenes propias cuentan dentro del mismo límite de tres.
   a.customImages.forEach((item,customIndex)=>{
     const b=document.createElement('button');
-    b.type='button'; b.className='choice custom-choice selected';
-    b.setAttribute('aria-pressed','true'); b.setAttribute('aria-label','Quitar imagen propia '+(customIndex+1));
+    b.type='button';b.className='choice custom-choice selected';
+    b.setAttribute('aria-pressed','true');b.setAttribute('aria-label','Quitar imagen propia '+(customIndex+1));
     b.innerHTML='<img src="'+item.dataUrl+'" alt="'+escapeHtml(item.name)+'"><div class="caption">'+escapeHtml(item.name)+' · Quitar</div>';
-    b.onclick=()=>{a.customImages.splice(customIndex,1);renderStep();};
+    b.onclick=()=>{a.customImages.splice(customIndex,1);renderStep()};
     grid.appendChild(b);
   });
   const uploadBtn=document.getElementById('uploadImageBtn');
-  uploadBtn.disabled=(a.images.length+a.customImages.length)>=3;
+  uploadBtn.disabled=selectedTotal>=3;
   uploadBtn.title=uploadBtn.disabled?'Ya seleccionaste 3 imágenes. Quita una para subir otra.':'Sube una imagen desde tu dispositivo';
   document.getElementById('phrase').value=a.phrase||'';
   document.getElementById('phrase').setAttribute('aria-required','true');
-  document.getElementById('selectionCount').textContent=(a.images.length+a.customImages.length)+' de 3 seleccionadas';
-  document.getElementById('nextBtn').disabled=(a.images.length+a.customImages.length)<1 || !a.phrase.trim();
+  document.getElementById('selectionCount').textContent=selectedTotal+' de 3 seleccionadas';
+  document.getElementById('nextBtn').disabled=selectedTotal<1 || !a.phrase.trim();
   document.getElementById('nextBtn').textContent=current===5?'FINALIZAR ✓':'SIGUIENTE →';
   document.getElementById('backBtn').style.visibility=current===0?'hidden':'visible';
 }
+const customImageInput=document.getElementById('customImageInput');
+document.getElementById('uploadImageBtn').addEventListener('click',()=>{
+  const a=answers[current];if(a.images.length+a.customImages.length>=3)return;
+  customImageInput.value='';customImageInput.click();
+});
+customImageInput.addEventListener('change',e=>{
+  const file=e.target.files&&e.target.files[0];if(!file)return;
+  const a=answers[current];if(a.images.length+a.customImages.length>=3){e.target.value='';return;}
+  if(!file.type.startsWith('image/')){alert('Elige un archivo de imagen.');e.target.value='';return;}
+  const reader=new FileReader();
+  reader.onload=()=>{a.customImages.push({name:file.name.replace(/\.[^.]+$/,'').slice(0,60)||'Mi imagen',dataUrl:reader.result});renderStep()};
+  reader.onerror=()=>alert('No pudimos cargar la fotografía. Inténtalo con otro archivo.');
+  reader.readAsDataURL(file);e.target.value='';
+});
 document.getElementById('phrase').addEventListener('input',e=>{answers[current].phrase=e.target.value;document.getElementById('nextBtn').disabled=(answers[current].images.length+answers[current].customImages.length)<1 || !e.target.value.trim();});
-document.getElementById('uploadImageBtn').addEventListener('click',()=>{const a=answers[current];if(a.images.length+a.customImages.length>=3)return;document.getElementById('customImageInput').click();});
-document.getElementById('customImageInput').addEventListener('change',e=>{const file=e.target.files&&e.target.files[0];if(!file)return;const a=answers[current];if(a.images.length+a.customImages.length>=3){e.target.value='';return;}if(!file.type.startsWith('image/')){alert('Elige un archivo de imagen.');e.target.value='';return;}const reader=new FileReader();reader.onload=()=>{a.customImages.push({name:file.name.replace(/\.[^.]+$/, '')||'Mi imagen',dataUrl:reader.result});renderStep();};reader.readAsDataURL(file);e.target.value='';});
 document.getElementById('nextBtn').onclick=()=>{
   if((answers[current].images.length+answers[current].customImages.length)<1 || !document.getElementById('phrase').value.trim()){document.getElementById('phrase').focus();return;}
   answers[current].phrase=document.getElementById('phrase').value.trim();
@@ -220,13 +235,92 @@ function showResult(){
   const board=document.getElementById('board');board.innerHTML='';
   answers.forEach((a,i)=>{
     const t=document.createElement('article');t.className='tile';
-    const imgs=a.images.map((imageIndex,j)=>'<img src="'+CATS[i].images[imageIndex][1]+'" alt="'+CATS[i].name+' · '+CATS[i].images[imageIndex][0]+'">').join('')+a.customImages.map(item=>'<img src="'+item.dataUrl+'" alt="'+escapeHtml(item.name)+'">').join('');
-    t.innerHTML='<div class="tileImages count-'+a.images.length+'">'+imgs+'</div>'+
+    const imgs=a.images.map((imageIndex,j)=>{
+      const item=CATS[i].images[imageIndex];
+      if(item[0]==='Cuidar a los animales'){
+        return '<div class="pet-collage"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=450&q=85" alt="Perro"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=450&q=85" alt="Gato"><img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?auto=format&fit=crop&w=450&q=85" alt="Conejo"><img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=450&q=85" alt="Ave"></div>';
+      }
+      return '<img src="'+item[1]+'" alt="'+CATS[i].name+' · '+item[0]+'">';
+    }).join('')+a.customImages.map(item=>'<img src="'+item.dataUrl+'" alt="'+escapeHtml(item.name)+'">').join('');
+    t.innerHTML='<div class="tileImages count-'+(a.images.length+a.customImages.length)+'">'+imgs+'</div>'+
       '<div class="tilePhrase"><h3>'+CATS[i].icon+' '+CATS[i].name+'</h3><p>'+escapeHtml(a.phrase)+'</p></div>';
     board.appendChild(t);
   });
   window.scrollTo({top:0,behavior:'smooth'});
 }
+async function downloadBoard(format){
+  const board=document.getElementById('board');
+  const status=document.getElementById('downloadStatus');
+  const buttons=document.querySelectorAll('.resultActions button');
+  if(!board || !board.children.length) return;
+  status.textContent='Preparando tu imagen…';
+  buttons.forEach(button=>button.disabled=true);
+  try{
+    // Espera a que las fotografías del tablero terminen de cargar.
+    const images=Array.from(board.querySelectorAll('img'));
+    await Promise.all(images.map(img=>{
+      if(img.complete) return Promise.resolve();
+      return new Promise(resolve=>{
+        img.onload=resolve;
+        img.onerror=resolve;
+      });
+    }));
+    // html2canvas convierte el tablero visible en una imagen descargable.
+    if(typeof html2canvas!=='function') throw new Error('No se pudo cargar el generador de imágenes. Revisa tu conexión e inténtalo de nuevo.');
+    const canvas=await html2canvas(board,{
+      backgroundColor:'#0d1b24',
+      scale:2,
+      useCORS:true,
+      allowTaint:false,
+      logging:false,
+      imageTimeout:15000,
+      windowWidth:Math.max(board.scrollWidth,board.clientWidth),
+      onclone:clonedDoc=>{
+        const clonedBoard=clonedDoc.getElementById('board');
+        if(clonedBoard){
+          clonedBoard.style.width=board.scrollWidth+'px';
+          clonedBoard.style.maxWidth='none';
+          clonedBoard.style.gridTemplateColumns='repeat(2,minmax(0,1fr))';
+
+          // Agrega una portada al archivo exportado sin modificar el tablero visible en pantalla.
+          const cover=clonedDoc.createElement('div');
+          cover.setAttribute('aria-label','Título del Vision Board');
+          cover.style.cssText='grid-column:1 / -1;box-sizing:border-box;text-align:center;padding:30px 20px 26px;margin:0 0 4px;border-radius:14px;background:linear-gradient(135deg,#071018 0%,#12394a 100%);color:#ffffff;';
+          const title=clonedDoc.createElement('div');
+          title.textContent='MI VISION BOARD';
+          title.style.cssText='font-family:Nunito,Arial,sans-serif;font-size:34px;font-weight:900;letter-spacing:1.5px;line-height:1.15;margin:0 0 10px;';
+          const accent=clonedDoc.createElement('div');
+          accent.style.cssText='width:76px;height:5px;margin:0 auto 12px;border-radius:99px;background:linear-gradient(90deg,#00a9df,#e03e52);';
+          const subtitle=clonedDoc.createElement('div');
+          subtitle.textContent='Lo que quiero vivir, crecer y construir.';
+          subtitle.style.cssText='font-family:Nunito,Arial,sans-serif;font-size:15px;font-weight:700;line-height:1.4;color:#d8e0e4;';
+          cover.appendChild(title);
+          cover.appendChild(accent);
+          cover.appendChild(subtitle);
+          clonedBoard.insertBefore(cover,clonedBoard.firstChild);
+        }
+      }
+    });
+    const mime=format==='jpg'?'image/jpeg':'image/png';
+    const quality=format==='jpg'?0.92:undefined;
+    const blob=await new Promise((resolve,reject)=>canvas.toBlob(result=>result?resolve(result):reject(new Error('No se pudo generar el archivo de imagen.')),mime,quality));
+    const url=URL.createObjectURL(blob);
+    const link=document.createElement('a');
+    link.href=url;
+    link.download='mi-vision-board.'+format;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+    status.textContent='¡Listo! Tu Vision Board se descargó en '+format.toUpperCase()+'. 💖';
+  }catch(error){
+    console.error('Error al exportar el Vision Board:',error);
+    status.textContent='No pudimos generar la imagen. Verifica tu conexión a internet e inténtalo de nuevo.';
+  }finally{
+    buttons.forEach(button=>button.disabled=false);
+  }
+}
+
 function escapeHtml(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function goHome(){
   wizardScreen.classList.add('hidden');resultScreen.classList.add('hidden');home.classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});
